@@ -33,16 +33,41 @@
             </nav>
         </div>
 
-        <main class="main">
-            <div class="information">
+        <div class="content">
+            <header id="header">
                 <h1 class="information__name">Отжимания</h1>
-                <div class="information__progress">
-                    <p>Прогресс</p>
-                    <p class="progress__persent">80%</p>
-                    <div class="progress__bar"></div> 
-                </div>  
-            </div>
-        </main>
+                <div class="progress">
+                    <div class="progress__text">
+                        <div class="progress__name">Прогресс</div>
+                        <div class="progress__percent">80%</div>
+                    </div>
+                    <div class="progress__bar">
+                        <div class="progress__cover-bar"></div>
+                    </div>
+                </div>
+            </header>
+
+            <main id="main">
+                <div>
+                    <div class="habbit">
+                        <div class="habbit__day">День 1</div>
+                        <div class="habbit__comment">Первый подход всегда даётся тяжело</div>
+                        <button class="habbit__delete">
+                            <img src="images/delete.svg" alt="delete">
+                        </button>
+                    </div>
+                    <div class="habbit">
+                        <div class="habbit__day">День 2</div>
+                        <form class="habbit__form">
+                            <input class="input_icon" type="text" placeholder="Комментарий">
+                            <img src="images/comment.svg" class="input__icon" alt="comment">
+                            <button class="button">Готово</button>
+                        </form>                       
+                    </div>
+                </div>
+            </main>
+        </div>
+        
     </div>
 
     <script src="scripts/app.js"></script>

@@ -4,22 +4,21 @@
 
 body {
     font-family: 'Comfortaa', cursive;
+    font-weight: 400;
     margin: 0;
     background-color: #F3F6FD;
 }
 
 .app {
     display: flex;
-    justify-content: space-between;
 }
 
 
 /* LEFT PANEL */
 .panel {
-    background-color: #FBFAFF;
-    min-height: 100vh;
     padding: 30px;
-
+    min-height: 100vh;
+    background-color: #FBFAFF;
 }
 
 .logo {
@@ -37,9 +36,9 @@ body {
     height: 45px;
     margin-bottom: 25px;
     background: #FFFFFF;
-    box-shadow: 0px 8px 14px rgba(62, 107, 224, 0.12);
-    border-radius: 14px;
     border: none;
+    border-radius: 14px;
+    box-shadow: 0px 8px 14px rgba(62, 107, 224, 0.12);
     cursor: pointer;
 }
 
@@ -76,15 +75,160 @@ body {
 
 /* MAIN CONTENT */
 
-.main {
-    padding: 45px 40px;
-    max-width: 810px;
-    flex-grow: 1;
+.content {
+    padding: 45px;
+    min-width: 800px;
 }
 
-.information {
-    margin-bottom: 35px;
+#header {
     display: flex;
     justify-content: space-between;
-    max-width: 810px;
+    align-items: center;
 }
+
+.information__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.progress {
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.progress__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress__name {
+    font-size: 14px;
+    line-height: 16px;
+    color: #232360;
+}
+
+.progress__percent {
+    font-size: 14px;
+    line-height: 16px;
+    color: #768396;
+}
+
+.progress__bar {
+    height: 6px;
+    background: #E6E9ED;
+    border-radius: 4px;
+    position: relative;
+}
+
+.progress__cover-bar {
+    height: 6px;
+    width: 80%;
+    background: #5051F9;
+    border-radius: 4px;
+    position: absolute;
+}
+
+#main {
+    margin-top: 30px;
+}
+
+.habbit {
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.habbit__day {
+    padding: 20px 40px;
+    min-width: 150px;
+    background: #f2f0fc;
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid #E7EBFB;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.habbit__comment {
+    padding: 0px 25px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.habbit__delete {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.habbit__delete:hover {
+    background-color: #EFF2Ff;
+}
+
+.habbit__form {
+    padding: 0px 10px 0 25px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    position: relative;
+}
+
+input {
+    padding: 12px 20px;
+    background: #FFFFFF;
+    border: 1px solid #E7EBFB;
+    border-radius: 9px;
+    flex: 1;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+.input_icon {
+    padding-left: 45px;
+}
+
+.input__icon {
+    position: absolute;
+    top: 10px;
+    left: 45px;
+}
+
+input::placeholder {
+    color: #8899A8;
+}
+
+.button {
+    padding: 14px 22px;
+    background: #EDECFE;
+    border: none;
+    border-radius: 9px;
+    font-size: 13px;
+    line-height: 14px;
+    color: #5051F9;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #dbdaff;
+}
+
+
+
+
+
+
+
