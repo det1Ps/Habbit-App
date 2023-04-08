@@ -86,7 +86,7 @@ body {
     align-items: center;
 }
 
-.information__name {
+.habbit__name {
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -127,7 +127,7 @@ body {
 
 .progress__cover-bar {
     height: 6px;
-    width: 80%;
+    transition: all 0.6s;
     background: #5051F9;
     border-radius: 4px;
     position: absolute;
