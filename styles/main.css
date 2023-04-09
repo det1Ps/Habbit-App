@@ -77,7 +77,7 @@ body {
 
 .content {
     padding: 45px;
-    min-width: 800px;
+    min-width: 1000px;
 }
 
 #header {
@@ -211,6 +211,10 @@ input::placeholder {
     color: #8899A8;
 }
 
+input.error {
+    border: 1px solid red;
+}
+
 .button {
     padding: 14px 22px;
     background: #EDECFE;
@@ -222,13 +226,112 @@ input::placeholder {
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background: #dbdaff;
 }
 
+.cover {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.cover_hidden {
+    display: none;
+}
 
+.popup {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 14px 12px rgba(56, 56, 56, 0.05);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.popup__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 
+.new__habbit {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+}
 
+.icon-label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #768396;
+}
 
+.icon-select {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 25px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: 1px solid #5051F9;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon_active {
+    background: #5051F9;
+}
+
+.icon_active img {
+    filter: brightness(0) invert(1);
+}
+
+.icon:hover {
+    background: #6A6AFB;
+}
+
+.icon:hover img{
+    filter: brightness(0) invert(1);
+}
+
+.popup__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.popup__form input {
+    width: 100%;
+}
+
+.popup__close {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.popup__close:hover {
+    background: #dbdaff;
+}
