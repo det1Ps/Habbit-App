@@ -30,14 +30,17 @@
         <div class="content">
             <header class="header" id="header">
                 <h1 class="habbit__name">У вас нет активыных привычек</h1>
-                <div class="progress">
-                    <div class="progress__text">
-                        <div class="progress__name">Прогресс</div>
-                        <div class="progress__percent">%</div>
+                <div class="right-side">
+                    <div class="progress">
+                        <div class="progress__text">
+                            <div class="progress__name">Прогресс</div>
+                            <div class="progress__percent">%</div>
+                        </div>
+                        <div class="progress__bar">
+                            <div class="progress__cover-bar"></div>
+                        </div>
                     </div>
-                    <div class="progress__bar">
-                        <div class="progress__cover-bar"></div>
-                    </div>
+                    <button class="habbit_delete" onclick="removeHabbit()">Удалить привычку</button>
                 </div>
             </header>
 
@@ -68,13 +71,13 @@
                 <div class="icon-label">Иконка</div>
                 <div class="icon-select">
                     <button class="icon icon_active" onclick="setIcon(this, 'sport')">
-                        <img src="/images/sport.svg" alt="Спорт">
+                        <img src="images/sport.svg" alt="Спорт">
                     </button>
                     <button class="icon" onclick="setIcon(this, 'food')">
-                        <img src="/images/food.svg" alt="Еда">
+                        <img src="images/food.svg" alt="Еда">
                     </button>
                     <button class="icon" onclick="setIcon(this, 'bottle')">
-                        <img src="/images/bottle.svg" alt="Напитки">
+                        <img src="images/bottle.svg" alt="Напитки">
                     </button>
                 </div>
                 <form action="#" class="popup__form" onsubmit="addHabbit(event)">

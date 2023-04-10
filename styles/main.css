@@ -83,10 +83,11 @@ body {
 #header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 
 .habbit__name {
+    margin: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -133,6 +134,28 @@ body {
     position: absolute;
 }
 
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.habbit_delete {
+    padding: 14px;
+    margin-top: 16px;
+    margin-left: auto;
+    background: #EDECFE;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 14px;
+    color: #5051F9;
+    cursor: pointer;
+}
+
+.habbit_delete:hover {
+    background: #dbdaff;
+}
+
 #main {
     margin-top: 30px;
 }
@@ -162,7 +185,7 @@ body {
     line-height: 18px;
 }
 
-.habbit__delete {
+.habbit__comment_delete {
     padding: 10px;
     margin-left: auto;
     margin-right: 10px;
@@ -172,7 +195,7 @@ body {
     cursor: pointer;
 }
 
-.habbit__delete:hover {
+.habbit__comment_delete:hover {
     background-color: #EFF2Ff;
 }
 

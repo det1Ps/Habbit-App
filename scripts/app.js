@@ -114,15 +114,13 @@ function rerenderContent(activHabbit) {
         element.classList.add('habbit');
         element.innerHTML = `<div class="habbit__day">День ${Number(index) + 1}</div>
                 <div class="habbit__comment">${activHabbit.days[index].comment}</div>
-                <button class="habbit__delete" onclick="removeDay(${index})">
+                <button class="habbit__comment_delete" onclick="removeDay(${index})">
                     <img src="images/delete.svg" alt="Удалить день ${index + 1}">
                 </button>`;
         page.content.daysConteiner.appendChild(element);
     }
     page.content.nextDay.innerHTML = `День ${activHabbit.days.length + 1}`;
 }
-
-
 
 function rerender(activHabbitId) {
     globalActiveHabbitId = activHabbitId;
@@ -200,6 +198,26 @@ function addHabbit(event) {
     rerender(maxId + 1);
 }
 
+
+// В работе)
+function removeHabbit(activHabbitId) {
+    console.log(habbits);
+//     habbits = habbits.filter((habbit, index) => index !== globalActiveHabbitId - 1)
+//                         .map((habbit, index) => {
+//         return {
+//             ...habbit,
+//             id: index + 1,
+            
+//         };
+//     });
+//     const parentOfdeleteElement = document.querySelector('.menu__list');
+//     const deleteElement = document.querySelector(`button[menu-habbit-id="${globalActiveHabbitId}"]`);
+//     parentOfdeleteElement.removeChild(deleteElement);
+//     console.log(habbits);
+//     rerender(globalActiveHabbitId);
+//     saveData();
+}
+
 // Init
 (() => {
     loadData();
@@ -207,233 +225,10 @@ function addHabbit(event) {
     const urlHabbit = habbits.find(habbit => habbit.id == hashId);
     if (urlHabbit) {
         rerender(urlHabbit.id);
-    } else {
+    } else if (habbits[0]) {
         rerender(habbits[0].id);
     }
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
